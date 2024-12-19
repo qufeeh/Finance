@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поле для фильтрации по категории -->
+    <EditText
+        android:id="@+id/filterCategoryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Категория для фильтрации" />
+
+    <!-- Поле для фильтрации по дате -->
+    <EditText
+        android:id="@+id/filterDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Дата для фильтрации (например, 16.12.2024)" />
+
+    <!-- Кнопка для применения фильтра -->
+    <Button
+        android:id="@+id/filterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Применить фильтры" />
+
+    <ListView
+        android:id="@+id/expensesListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Назад" />
+
+    <Button
+        android:id="@+id/deleteExpenseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Удалить расход"
+        android:visibility="gone" />
+
+</LinearLayout>
